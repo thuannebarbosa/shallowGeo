@@ -1,0 +1,167 @@
+.contact {
+    h1 {
+        font-size: 85px;
+        font-weight: 800;
+        color: $c-primary;
+    }
+
+
+    p {
+        font-size: 16px;
+        font-weight: 400;
+        color: $c-primary;
+        line-height: 30px;
+    }
+
+    h2 {
+        font-size: 27px;
+        font-weight: bold;
+        color: $c-primary;
+        margin-bottom: 15px;
+    }
+
+    .top {
+        padding-top: 240px;
+        background: url('/src/images/bg-about-top.jpg') no-repeat center top;        
+        height: 325px;
+        
+        h1 {
+            padding-top: 145px;
+            padding-left: 75px;
+            font-size: 66px;
+            letter-spacing: 10px;
+            background: url('/src/images/bg-top-contact.jpg') no-repeat center top;
+            height: 324px;  
+        }
+        
+    }
+
+
+    .contact-text {
+        margin: 40px 0 60px;
+        align-content: flex-start;
+
+        
+        
+
+        .left, .right {
+            background-color: #FFF;
+            position: relative; 
+            padding: 50px; 
+
+            ul {
+                li {
+                    margin-bottom: 40px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                }
+            }
+    
+            
+        }
+        .left {
+            margin-right: 20px; 
+            width: 485px;
+            &:before {
+                content: '';
+                position: absolute;
+                display: inline-block;
+                width: 0; 
+                height: 0; 
+                
+                border-top: 40px solid transparent;
+                border-bottom: 40px solid transparent; 
+                border-right: 40px solid $c-primary;
+    
+                transform: rotate(45deg);
+    
+                left: -5px;
+                top: -25px;
+            }
+        }
+
+        .right {
+            margin-left: 20px;
+            width: 655px;
+
+            &:before {
+                content: '';
+                position: absolute;
+                display: inline-block;
+                width: 0; 
+                height: 0; 
+                
+                
+                border-top: 40px solid transparent;
+                border-bottom: 40px solid transparent; 
+                border-left: 40px solid $c-primary;
+
+                transform: rotate(-45deg);
+
+               
+                right: -5px;
+                top: -25px;
+            }
+        }
+    }
+
+    section.form {
+        position: relative;
+        margin-bottom: 115px;
+        .content {
+            background-color: #FFF;
+            padding: 50px 55px;
+
+            h2 {
+                font-size: 24px;
+                margin-bottom: 35px;
+            }
+
+            input {
+                flex-basis: calc(50% - 40px);
+                border-radius: 0;
+                box-shadow: none;
+                border: 1px solid #d0d0d0;
+                padding: 20px 14px;
+                font-size: 17px;
+                color: $c-primary;
+                font-weight: 500;
+                &::placeholder {
+                    color: $c-primary;
+                    font-weight: 500;
+                    opacity: 1;
+                }
+                &[type="submit"]{
+                    text-transform: uppercase;
+                    background-color: #020532;
+                    color: #FFF;
+                    font-size: 19px;
+                    font-weight: bold;
+                    letter-spacing: 5px;
+                    width: 205px;
+                    margin-top: 20px;
+                    border: 0;
+                }
+            }
+
+            textarea {
+                margin-top: 30px;
+                padding: 20px 14px;
+                font-size: 16px;
+                color: $c-primary;
+                font-weight: 500;
+                width: calc(100% - 30px);
+                height: calc(197px - 40px);
+                border: 1px solid #d0d0d0;
+                &::placeholder {
+                    color: $c-primary;
+                    font-weight: 500;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

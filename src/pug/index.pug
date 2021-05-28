@@ -1,0 +1,104 @@
+doctype html
+html(lang="en")
+    include includes/head.pug
+    body
+
+include components/header
+
+main.home
+    section.top 
+        .container.flex.space-between
+            h1 
+                | Know #[br] the Risks
+            img(src="src/images/img-home-top.jpg", alt="")
+
+    section.innovation
+        .container.flex.space-between           
+            .left 
+                img(src="src/images/img-home-inovation.jpg", alt="")
+            .right 
+                h1 
+                    | Innovation
+                p 
+                    | We recover seismic waveform from enveloped sub-bottom profiler data.
+                    | Modeling of UHR Seismic data and Multi-Sensor Core Logger
+                    | Seismic attributes to reveal risks in the context of subsea engineering 
+                    | Filtering and Denoising of marine acoustical data using Deep Learning
+                    | We compute the safer path to cable routes through quantitative risk analyses.
+
+
+    section.our-services
+        .container.flex.space-between           
+            .left 
+                h1 
+                    | Know our #[br] services
+                p 
+                    | Survey support through field QA/QC, processing, and client representation
+                    | Advanced processing of acoustic and magnetic gradiometry data
+                    | Qualitative and quantitative interpretation
+                                    
+            .right
+                img(src="src/images/img-home-our-services.jpg", alt="")
+                
+
+    section.we-worked 
+        .container.flex.space-between  
+            .left 
+                h1 
+                    | We worked #[br]
+                    | on these #[br]
+                    | offshore #[br]
+                    | wind farms
+            .right
+                ul 
+                    li 
+                        p Bay State Wind 
+                        span (OCS-A0500) in Massachusetts: 758km&sup2; - 2000MW
+                    li 
+                        p Vineyard Wind 
+                        span (OCS-A 0501) in Massachusetts: 675 km² - 800 MW
+                    li 
+                        p Ocean Wind
+                        span (OCS-A 0498) in New Jersey: 649 km² – 1100MW 
+                    li 
+                        p Liberty Wind
+                        span (OCS-A 0522) in Massachusetts: 535 km² - 1200 MW
+                    li 
+                        p Empire Wind
+                        span (OCS-A 0512) in New York: 321 km² - 1260 MW
+                    li 
+                        p Beacon Wind
+                        span (OCS-A 0520) in Massachusetts: 517 km² - 1230 MW
+                    li 
+                        p Erebus Wind Farm
+                        span in Irish Sea: 96MW
+
+
+    section.people 
+        .container.flex.flex-wrap 
+
+            h1 People 
+
+            ul 
+                li 
+                    img(src="src/images/img-people-victor.jpg")/
+
+                    .txt
+                        h2 Victor Do Couto
+                        span MSc in Geophysics with seven years of experience including relevant contribution to the study of six offshore wind farms in the East Coast of the U.S.
+
+                li 
+                    img(src="src/images/img-people-joao.jpg")/
+
+                    .txt
+                        h2 João Bruno Cunha
+                        span PhD in Geophysics with ten years of experience. Eight in the oil & gas and the last two in offshore wind farms on the East Coast of the US.
+
+                li 
+                    img(src="src/images/img-people-natacha.jpg")/
+
+                    .txt
+                        h2 Natacha Rocha
+                        span MSc in Geophysics with eight years of experience in seismic processing & imaging. Works for offshore wind farms in the UK and on the East Coast of the US.
+    
+include components/footer

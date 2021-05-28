@@ -1,0 +1,63 @@
+doctype html
+html(lang="en")
+    include includes/head.pug
+    body
+
+include components/header
+
+main.tech
+    section.top
+        .container.flex.space-between
+            div
+                h1 
+                    | Technology
+
+                p Shallowgeo uses technologies designed by its R&D department to solve geophysical and geological problems by enhancing image quality of acoustic and magnetic data: 
+
+            div
+                img(src="src/images/img-about-technology.jpg", alt="")/
+
+               
+
+    section.content
+        .container
+
+            h2 We recover full seismic waveform from enveloped sub-bottom profiler data.
+            
+            img(src="src/images/img-tech-01.jpg", alt="")/
+
+            p "... Seismic acquisitions performed in the past with sub-bottom profilers were stored only as seismic envelope (Instantaneous amplitude) instead of the seismic waveform, and it led to a massive amount of legacy data without phase information. To retrieve the seismic waveform from an envelope, we introduce the un-envelope algorithm based on two deep convolutional neural networks. It achieves a reconstruction with at least 98% of matching. The main objective of retrieving the full seismic waveform from an envelope data is the use of seismic attributes on it to improve the resolution and accuracy of geological interpretations..."
+
+            h2 We perform direct and inversion modeling using MSCL (Multi-Sensor Core Logger) profiles and ultra-high resolution seismic data to help produce high-fidelity ground models. 
+
+            img(src="src/images/img-tech-02.jpg", alt="")/
+
+            p "... Geological inversions and direct modeling aid in interpretation of shallow marine environments, extending the validation of geological samples through the seismic horizons. It also helps geotechnical departments to reduce the risk on geohazard analyses..."
+
+            h2 We customize filters to denoise mag data using machine learning approach
+
+            img(src="src/images/img-tech-03.jpg", alt="")/
+
+            img(src="src/images/img-tech-04.jpg", alt="")/
+
+            p "The magnetic field data acquired by marine magnetometers from towed, ROV and AUV systems is strongly contaminated by motion artefacts. Here, we propose a set of techniques to discriminate noise contents by using linear and non-linear analysis and filter customization capable of removing unwanted signals "
+
+            h2 We compute magnetic attributes to enhance image quality and determine interactively target locations
+
+            img(src="src/images/img-tech-05.jpg", alt="")/
+
+            img(src="src/images/img-tech-06.jpg", alt="")/
+
+            p "The application of magnetic attributes enhances image quality and improves significantly anomalies detection. By producing 4 or more enhancement maps, the interpreter can interactively pick targets."
+
+            h2 We perform forward and inversion modeling of magnetic data to characterize targets and evaluate their potential risks
+
+            img(src="src/images/img-tech-07.jpg", alt="")/
+
+            p "In order to understand the risks offered by a man made hazard as an UXO, we use forward and inversion modeling to estimate burial depth and ferrous mass. "
+
+
+
+               
+   
+include components/footer

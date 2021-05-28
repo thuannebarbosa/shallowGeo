@@ -1,0 +1,98 @@
+footer {
+    background: url('/src/images/bg-footer.jpg') center top;
+    padding-top: 155px;
+    color: #FFF;
+    h1 {
+        color: #fff;
+        font-size: 85px;
+        font-weight: bold;
+        margin-bottom: 60px;
+        width: 100%;
+    }
+
+    .copyright {
+        background-color: $c-primary;
+        font-size: 17px;
+        color: #fff;
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    .left,.right {
+        flex-basis: 50%;
+    }
+    .social {
+        flex-basis: 100%;
+        margin-top: 50px;
+        margin-bottom: 250px;
+        i {
+            font-size: 32px;
+            margin-right: 20px;
+        }
+        h2 {
+            font-size: 27px;
+            font-weight: bold;
+        }
+        a {
+            color: #FFF;
+            text-decoration: none;
+            font-size: 17px;
+            line-height: 30px;
+        }
+    }
+
+    .f-menu {
+        ul {
+            display: flex;
+            justify-content: flex-end
+        }
+        li {
+            display: inline;
+            padding: 0 40px;
+
+            a {
+                text-decoration: none;
+                color: #FFF;
+                font-size: 17px;
+                font-weight: 800;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .office {
+        
+        .title {
+            font-size: 27px;
+            font-weight: bold;
+            margin-bottom: 18px;
+        }
+        .contact {
+            line-height: 30px;
+        }
+
+        .br {
+            display: flex;
+            &:before {
+                content: '';
+                display: inline-block;
+                width: 47px;
+                height: 33px;
+                background-image: url('/src/images/bandeira-br.jpg');
+                margin-right: 20px;
+            }
+        }
+
+        .pt {
+            display: flex;
+            &:before {
+                content: '';
+                display: inline-block;
+                width: 47px;
+                height: 33px;
+                background-image: url('/src/images/bandeira-pt.jpg');
+                margin-right: 20px;
+            }
+        }
+    }
+}

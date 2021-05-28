@@ -1,0 +1,204 @@
+.home {
+    h1 {
+        font-size: 85px;
+        font-weight: 800;
+        color: $c-primary;
+        letter-spacing: 10px;
+    }
+
+
+    p {
+        background-color: #FFF;
+        padding: 40px;
+        font-size: 17px;
+        color: $c-primary;
+        line-height: 30px;
+    }
+
+    .right, .left {
+        position: relative;
+    }
+
+    .top {
+        padding-top: 143px;
+        background: url('/src/images/bg-home-top.jpg') no-repeat center top;        
+        min-height: 560px;
+
+        h1 {
+            padding-top: 130px;
+            font-size: 106px;
+        }
+
+        img {
+            position: absolute;
+            right: 0;
+            //z-index: 10;
+        }
+        
+    }
+
+    .innovation {
+        padding-top: 90px;
+        h1 {
+            text-align: right;
+            padding-top: 60px;
+            padding-bottom: 50px;
+        }
+
+        
+
+        p{
+            width: 650px;
+            position: absolute;
+            right: 0;
+
+            &:before {
+                content: '';
+                position: absolute;
+                display: inline-block;
+                width: 0; 
+                height: 0; 
+                
+                border-top: 90px solid transparent;
+                border-bottom: 90px solid transparent; 
+                border-left: 90px solid $c-primary;
+
+                transform: rotate(-45deg);
+
+                left: -77px;
+                top: -57px;
+            }
+        }
+    }
+
+    .our-services {
+        padding-top: 35px;
+        h1 {
+            padding-top: 65px;
+            padding-bottom: 50px;
+        }
+
+        p{
+            width: 650px;
+            position: absolute;
+            left: 0;
+
+            z-index: 8;
+
+            &:before {
+                content: '';
+                position: absolute;
+                display: inline-block;
+                width: 0; 
+                height: 0; 
+                
+                border-top: 90px solid transparent;
+                border-bottom: 90px solid transparent; 
+                border-left: 90px solid $c-primary;
+
+                transform: rotate(135deg);
+
+                right: -77px;
+                bottom: -58px;
+            }
+        }
+    }
+
+    .we-worked {
+        background-color: #FFF;
+        margin-top: 150px;
+
+        .left {
+            padding: 125px 0;
+            h1 {
+                line-height: 100px;
+                letter-spacing: normal;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                display: inline-block;
+                width: 0; 
+                height: 0; 
+                
+                border-top: 90px solid transparent;
+                border-bottom: 90px solid transparent; 
+                border-left: 90px solid $c-primary;
+
+                transform: rotate(-45deg);
+
+                right: -73px;
+                top: -59px;
+            }
+        }
+
+        .right {
+            position: relative;
+            ul {
+                position: absolute;
+                background-color: #FFF;
+                top: -80px;
+                right: 0;
+                padding: 88px 62px;
+                width: calc(560px - 124px);
+                li {
+                    margin-bottom: 35px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+                p {
+                    font-size: 27px;
+                    font-weight: bold;
+                    padding: 0 0 10px;
+                }
+
+                span {
+                    font-size: 17px;
+                    color: $c-primary;
+                }
+            }
+        }
+    }
+
+    .people {
+        background-color: $c-primary;
+        padding-top: 80px;
+
+        max-height: calc(705px - 80px);
+
+        h1 {
+            color: #FFF;
+            width: 100%;
+            margin-bottom: 60px;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+
+            width: 100%;
+
+            li {
+                background-color: #FFF;
+                max-width: 333px;
+
+                .txt {
+                    padding: 30px;
+                    color: $c-primary;
+
+                    h2 {
+                        font-size: 27px;
+                        font-weight: bold;
+                        margin-bottom: 15px;
+                    }
+
+                    span {
+                        font-size: 16px;
+                        line-height: 26px;
+                    }
+                }
+            }
+        }
+    }
+}

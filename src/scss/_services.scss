@@ -1,0 +1,230 @@
+.services {
+    h1 {
+        font-size: 85px;
+        font-weight: 800;
+        color: $c-primary;
+    }
+
+
+    p {
+        position: relative;
+        background-color: #FFF;
+        padding: 40px;
+        font-size: 16px;
+        color: $c-primary;
+        line-height: 30px;
+        font-weight: 500;
+
+        span {
+            display: block;
+            font-size: 27px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            display: inline-block;
+            width: 0; 
+            height: 0; 
+            
+            border-top: 40px solid transparent;
+            border-bottom: 40px solid transparent; 
+            border-right: 40px solid $c-primary;
+
+            transform: rotate(45deg);
+
+            left: -5px;
+            top: -25px;
+        }
+
+        &.field-processing,
+        &.client-representation{
+            position: relative;
+            &:before {
+                border-right: 0;
+                border-top: 40px solid transparent;
+                border-bottom: 40px solid transparent; 
+                border-left: 40px solid $c-primary;
+
+                transform: rotate(-45deg);
+
+                left: auto;
+                right: -5px;
+                top: -25px;
+            }
+        }
+    }
+
+
+    .top {
+        padding-top: 155px;
+        background: url('/src/images/bg-about-top.jpg') no-repeat center top;        
+        height: 460px;
+        
+        p {
+            max-width: calc(675px - 75px) ;
+            margin-top: 30px;
+        }
+
+        h1 {
+            padding-top: 100px;
+            font-size: 80px;
+            letter-spacing: 10px;
+        }
+
+        img {
+            position: absolute;
+            right: 15px;
+            //z-index: 10;
+        }
+        
+    }
+
+    .right {
+        margin-left: 30px;
+    }
+
+    .left {
+        margin-right:30px;
+    }
+
+    h2 {
+        font-size: 40px;
+        font-weight: 800;
+        color: $c-primary;
+        padding-bottom: 35px;
+
+        &.client-representation {
+            text-align: right;
+            margin-top: 45px;
+            line-height: 50px;
+        }
+    }
+
+    .support, .inversion {
+        margin-top: 75px;
+    }
+
+    .processing {
+        margin-top: 90px;
+        h1 {
+            font-size: 70px;
+            font-weight: 800;
+            margin-bottom: 35px;
+        }
+        h2 {
+            font-size: 25px;
+            font-weight: bold;
+            line-height: 35px;
+        }
+       span {
+            margin-top: 35px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+
+        img {
+            margin-bottom: 50px;
+        }
+    }
+
+    .inversion {
+        img {
+            width: auto;
+            height: 486px;
+        }
+
+        .content {
+            background-color: #FFF;
+            align-items: center;
+            justify-content: space-between;
+            padding: 40px;
+            position: relative;
+
+            &:before {
+                content: '';
+                position: absolute;
+                display: inline-block;
+                width: 0; 
+                height: 0; 
+                
+                border-top: 40px solid transparent;
+                border-bottom: 40px solid transparent; 
+                border-right: 40px solid $c-primary;
+    
+                transform: rotate(45deg);
+    
+                left: -5px;
+                top: -25px;
+            }
+
+            ul {
+                li {
+                    margin-bottom: 32px;
+                    &:last-child{
+                        margin-bottom:0;
+                    } 
+                }
+                p {
+                    padding:0; 
+                    &:before {
+                        display: none;;
+                    }
+                
+                }
+            }
+        }
+    }
+
+    .preparation {
+        margin: 70px 0 130px;
+
+        .container {
+            align-items: center;
+        }
+
+        h2 {
+            line-height: 60px;
+            font-size: 55px;
+        }
+
+        ul {
+            column-count: 2;
+            background-color: #FFF;
+            padding: 65px;
+
+            position: relative;
+
+            &:before {
+                content: '';
+                position: absolute;
+                display: inline-block;
+                width: 0; 
+                height: 0; 
+                
+                border-top: 40px solid transparent;
+                border-bottom: 40px solid transparent; 
+                border-right: 40px solid $c-primary;
+    
+                transform: rotate(45deg);
+    
+                left: -5px;
+                top: -25px;
+            }
+            li {
+                color: $c-primary;
+                font-size: 25px;
+                font-weight: 500;
+                margin-bottom: 25px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

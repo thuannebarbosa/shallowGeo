@@ -1,0 +1,66 @@
+doctype html
+html(lang="en")
+    include includes/head.pug
+    body
+
+include components/header
+
+main.contact
+    section.top 
+        .container
+                h1 
+                    | Contact us
+               
+
+    section.contact-text 
+        .container.flex.space-between  
+            .left 
+                ul 
+                        
+                    li 
+                        h2 E-mails: 
+                        p  
+                            | sales@shallowgeo.com #[br]
+                            | info@shallowgeo.com
+
+                    li 
+                        h2 Phones:
+                        p 
+                            | +351 239 820 691 mon - fri 09:00-18:00 GMT(0) #[br]
+                            | +55 21 972780910 mon - fri 09:00-18:00 GMT(-3)
+                    li 
+                        h2 WhatsApp:
+                        p 
+                            | +351 961 304 470 mon - fri 09:00-18:00 GMT(0) #[br]
+                            | +55 21 972780910 mon - fri 09:00-18:00 GMT(-3)
+
+            .right
+                ul 
+                    li 
+                       h2 Social networks:
+                        p 
+                            | www.linkedin.com/company/shallowgeo
+                    li 
+
+                        h2 Address:
+                        p
+                            | Tv. Padre Manuel da Nóbrega, 12, 3DTO, Coimbra, Portugal #[br]
+                            | Rua Itaipava, 5, 906, Praia de Itaparica, Vila Velha, Espírito Santo
+        
+    section.form 
+        .container 
+            .content 
+                h2 For more information contact us using the form below:
+
+                form(action="/envia.php" method="POST" id="form") 
+                    .row.flex.space-between
+                        input(type="text" name="name" placeholder="Your name" required="required")
+                        input(type="email" name="email" placeholder="Your e-mail" required="required")
+                    .row 
+                        textarea(name="message" placeholder="Enter your message")
+                    .row 
+                        input(type="submit" value="submit")
+
+
+   
+include components/footer
